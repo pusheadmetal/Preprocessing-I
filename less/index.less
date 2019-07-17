@@ -53,7 +53,308 @@ table {
     box-sizing: border-box;
 }
 
+html{
+	font-size: 20px;
+}
+
 html, body {
     height: 100%;
 }
+
+/* Variables */
+
+	/* Colors */
+
+	@background-color: #708090;
+	@text-color: snow;
+	@box-background-color: #A9B2BC;
+	@box-text-color: white;
+	@border-color: steelblue;
+
+/* Text */
+	/* Desktop */
+		@h1-desktop-size: 3.5rem;
+		@h2-desktop-size: 3rem;
+		@h3-desktop-size: 2rem;
+		@p-desktop-size: 1.5rem;
+	/* Tablet */
+		@h1-tablet-size: 3rem;
+		@h2-tablet-size: 2.5rem;
+		@h3-tablet-size: 1.5rem;
+		@p-tablet-size: 1rem;
+	/* Phone */
+		@h1-phone-size: 2.5rem;
+		@h2-phone-size: 2rem;
+		@h3-phone-size: 1rem;
+		@p-phone-size: .8rem;
+	// Fonts
+		@main-font: 'Indie Flower', cursive;
+
+.container{
+
+	width: 880px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 800px){
+		width: 100%;
+		height: 1000px;
+	}
+
+}
+
+	body{
+		background-color: @background-color;
+		color: @text-color;
+
+		h1, h2, h3{
+			font-family: @main-font;
+		}
+
+		h1{
+			font-size: @h1-desktop-size;
+			@media screen and (max-width:800px){
+				font-size: @h1-tablet-size;
+			}
+			@media screen and (max-width:500px){
+				font-size: @h1-phone-size;
+			}
+		}
+		h2{
+			font-size: @h2-desktop-size;
+			@media screen and (max-width:800px){
+				font-size: @h2-tablet-size;
+			}
+			@media screen and (max-width:500px){
+				font-size: @h2-phone-size;
+			}
+		}
+		h3{
+			font-size: @h3-desktop-size;
+			@media screen and (max-width:800px){
+				font-size: @h3-tablet-size;
+			}
+			@media screen and (max-width:500px){
+				font-size: @h3-phone-size;
+			}
+		}
+		#p(){
+			font-size: @p-desktop-size;
+			font-family: @main-font;
+			@media screen and (max-width:800px){
+				font-size: @p-tablet-size;
+			}
+			@media screen and (max-width:500px){
+				font-size: @p-phone-size;
+			}
+		}
+		p{
+			#p;
+		}
+		li{
+			#p;
+		}
+
+		header .navContainer{
+
+			margin: 1%;
+			padding: 1%;
+			
+			nav {
+				display: flex;
+				justify-content: space-evenly;
+				@media screen and (max-width:500px){
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+
+			nav a{
+				text-decoration: none;
+				color: @text-color;
+				#p;
+			}
+		}
+	
+
+		.intro{
+			display: flex;
+			justify-content: space-evenly;
+			border-bottom: 1px solid @border-color;
+			margin: 1%;
+			padding: 1%;
+
+			@media screen and (max-width: 800px){
+				//width: 70%;
+				justify-content: center;
+			}
+
+			@media screen and (max-width: 500px){
+				flex-direction: column;
+				align-items: center;
+			}
+			
+
+			img{
+				height: 400px;
+				width: 50%;
+				margin: 2%;
+
+				@media screen and (max-width: 500px){
+					//width: 75%;
+				}
+
+			}
+			
+
+			#intro_text{
+				height: 400px;
+				width: 50%;
+				margin: 2%;
+
+				@media screen and (max-width: 500px){
+					//width: 50%;
+					height: 70%;
+				}
+
+			}
+		}
+
+		.skills{
+			border-bottom: 1px solid @border-color;
+
+			#skills_images{
+				display: flex;
+				justify-content: space-evenly;
+				margin: 1%;
+				padding: 1%;
+
+				@media screen and (max-width: 800px){
+					//width: 70%;
+					justify-content: center;
+				}
+	
+				@media screen and (max-width: 500px){
+					flex-direction: column;
+					align-items: center;
+				}
+
+				img{
+					height: 365px;
+					width: 50%;
+				}
+			}
+
+			.boxes{
+				display: flex;
+				justify-content: space-evenly;
+				margin: 1%;
+				padding: 1%;
+
+				@media screen and (max-width: 800px){
+					//width: 70%;
+					justify-content: center;
+				}
+	
+				@media screen and (max-width: 500px){
+					flex-direction: column;
+					align-items: center;
+				}
+				
+				.boxContent{
+					color: @box-text-color;
+					background-color: @box-background-color;
+					border: 1px solid @border-color;
+					height: 400px;
+					width: 50%;
+
+					@media screen and (max-width: 500px){
+						height: 70%;
+					}
+				}
+			}
+		}
+
+		#formContainer{
+			margin: 1% 0 1% 0;
+			padding: 1% 0 1% 0;
+			text-align: center;
+
+			#topForm{
+				display: flex;
+				justify-content: space-evenly;
+				margin: 1%;
+				padding: 1%;
+
+				@media screen and (max-width: 800px){
+					//width: 70%;
+					justify-content: center;
+				}
+	
+				@media screen and (max-width: 500px){
+					flex-direction: column;
+					align-items: center;
+				}
+
+				#fieldOne, #fieldTwo{
+					width: 50%;
+
+					input{
+						#p;
+					}
+				}
+			}
+
+			#midForm{
+				#topForm;
+			}
+
+			#bottomForm{
+				display: flex;
+				flex-direction: column;
+
+				@media screen and (max-width: 500px){
+					display: none;
+				}
+				
+				textarea{
+					#p;
+				}
+
+				input{
+					align-self: center;
+					width: 15%;
+					#p;
+					color: @text-color;
+					background-color: @background-color;
+				}
+			}
+
+			#bottomFormMobile{
+				display: none;
+
+				@media screen and (max-width: 500px){
+					display: flex;
+					flex-direction: column;
+				}
+
+				textarea{
+					#p;
+				}
+
+				input{
+					align-self: center;
+					width: 15%;
+					#p;
+					color: @text-color;
+					background-color: @background-color;
+				}
+			}
+		}
+
+		footer{
+			text-align: center;
+		}
+
+	}
+
 

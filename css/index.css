@@ -1,1 +1,515 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+html,
+body {
+  height: 100%;
+}
+/* Variables */
+/* Colors */
+/* Text */
+/* Desktop */
+/* Tablet */
+/* Phone */
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 1000px;
+  }
+}
+body {
+  background-color: #708090;
+  color: snow;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: 'Indie Flower', cursive;
+}
+body h1 {
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 800px) {
+  body h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body h1 {
+    font-size: 2.5rem;
+  }
+}
+body h2 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 800px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body h2 {
+    font-size: 2rem;
+  }
+}
+body h3 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 800px) {
+  body h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body h3 {
+    font-size: 1rem;
+  }
+}
+body p {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body p {
+    font-size: 0.8rem;
+  }
+}
+body li {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body li {
+    font-size: 0.8rem;
+  }
+}
+body header .navContainer {
+  margin: 1%;
+  padding: 1%;
+}
+body header .navContainer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 500px) {
+  body header .navContainer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body header .navContainer nav a {
+  text-decoration: none;
+  color: snow;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body header .navContainer nav a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body header .navContainer nav a {
+    font-size: 0.8rem;
+  }
+}
+body .intro {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid steelblue;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  body .intro {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .intro img {
+  height: 400px;
+  width: 50%;
+  margin: 2%;
+}
+@media screen and (max-width: 500px) {
+}
+body .intro #intro_text {
+  height: 400px;
+  width: 50%;
+  margin: 2%;
+}
+@media screen and (max-width: 500px) {
+  body .intro #intro_text {
+    height: 70%;
+  }
+}
+body .skills {
+  border-bottom: 1px solid steelblue;
+}
+body .skills #skills_images {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  body .skills #skills_images {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .skills #skills_images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .skills #skills_images img {
+  height: 365px;
+  width: 50%;
+}
+body .skills .boxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  body .skills .boxes {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .skills .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body .skills .boxes .boxContent {
+  color: white;
+  background-color: #A9B2BC;
+  border: 1px solid steelblue;
+  height: 400px;
+  width: 50%;
+}
+@media screen and (max-width: 500px) {
+  body .skills .boxes .boxContent {
+    height: 70%;
+  }
+}
+body #formContainer {
+  margin: 1% 0 1% 0;
+  padding: 1% 0 1% 0;
+  text-align: center;
+}
+body #formContainer #topForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #topForm {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #topForm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body #formContainer #topForm #fieldOne,
+body #formContainer #topForm #fieldTwo {
+  width: 50%;
+}
+body #formContainer #topForm #fieldOne input,
+body #formContainer #topForm #fieldTwo input {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #topForm #fieldOne input,
+  body #formContainer #topForm #fieldTwo input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #topForm #fieldOne input,
+  body #formContainer #topForm #fieldTwo input {
+    font-size: 0.8rem;
+  }
+}
+body #formContainer #midForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1%;
+  padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #midForm {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #midForm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body #formContainer #midForm #fieldOne,
+body #formContainer #midForm #fieldTwo {
+  width: 50%;
+}
+body #formContainer #midForm #fieldOne input,
+body #formContainer #midForm #fieldTwo input {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #midForm #fieldOne input,
+  body #formContainer #midForm #fieldTwo input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #midForm #fieldOne input,
+  body #formContainer #midForm #fieldTwo input {
+    font-size: 0.8rem;
+  }
+}
+body #formContainer #bottomForm {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomForm {
+    display: none;
+  }
+}
+body #formContainer #bottomForm textarea {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #bottomForm textarea {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomForm textarea {
+    font-size: 0.8rem;
+  }
+}
+body #formContainer #bottomForm input {
+  align-self: center;
+  width: 15%;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  color: snow;
+  background-color: #708090;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #bottomForm input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomForm input {
+    font-size: 0.8rem;
+  }
+}
+body #formContainer #bottomFormMobile {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomFormMobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body #formContainer #bottomFormMobile textarea {
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #bottomFormMobile textarea {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomFormMobile textarea {
+    font-size: 0.8rem;
+  }
+}
+body #formContainer #bottomFormMobile input {
+  align-self: center;
+  width: 15%;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  color: snow;
+  background-color: #708090;
+}
+@media screen and (max-width: 800px) {
+  body #formContainer #bottomFormMobile input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body #formContainer #bottomFormMobile input {
+    font-size: 0.8rem;
+  }
+}
+body footer {
+  text-align: center;
+}

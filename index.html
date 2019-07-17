@@ -11,9 +11,157 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> 
 </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+<div class = "container">
+
+  <body>
+
+   <header>
+     <div class = "navContainer">
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/pusheadmetal">GitHub</a>
+      </nav>
+    </div>
+   </header>
+   
+   <section class = "intro">
+    <a name="intro"></a>
+
+
+    <img src = "images/wizard.jpg" alt = "A wizard pointing a wand at the camera">
+
+
+     <div id = "intro_text">
+
+       <h1>Hi, I'm Waldorf!</h1>
+
+       <p>As you can see from my picture, I'm a totally, 100% legit wizard. Don't question it. You can't even begin to fathom my awesomeness.</p>
+
+     </div>
+
+   </section>
+
+   <section class = "skills">
+     <a name="skills"></a>
+
+    <div id = "skills_images">
+
+      <img src = "images/dragon.jpg" alt = "A dragon blowing flames from a rooftop">
+      <img src = "images/mountain.jpg" alt = "A far away view of a small mountain">
+
+    </div>
+
+    <div class = "boxes">
+
+      <div class = "boxContent">
+
+        <h2>Skills</h2>
+
+        <ul>
+          <li>Setting things on fire</li>
+          <li>Smiting enemies with lightning</li>
+          <li>Amalgamating various compounds</li>
+          <li>Proficiency in common, dwarven, and elven languages</li>
+          <li>Summoning dragons (see above)</li>
+          <li>Cooking</li>
+        </ul>
+
+      </div>
+
+      <div class = "boxContent">
+
+        <h2>Work History</h2>
+
+        <ul>
+          <li>1540 BI - Helped a group of dwarves reclaim a mountain (see above)</li>
+          <li>22 I - Helped a few mortals destroy a powerful artifact (at least that's what they think)</li>
+          <li>51 I - Helped to reclaim a magical sphere from beyond the grave</li>
+          <li>10 AI - Aided three other companions in their quest to light a few crystals</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+   </section>
+
+   <section class="contact">
+     <a name="contact"></a>
+
+    <div id = "formContainer">
+
+      <h2>Contact Me</h2>
+
+      <form>
+
+        <div id = "topForm">
+
+          <div id = "fieldOne">
+
+          <h3>First Name:</h3>
+          <input type = "text" name = "firstname">
+
+          </div>
+
+          <div id = "fieldTwo">
+
+          <h3>Last Name:</h3>
+          <input type = "text" name = "lastname">
+
+          </div>
+
+        </div>
+
+        <div id = "midForm">
+
+          <div id = "fieldOne">
+
+          <h3>Email:</h3>
+          <input type = "text" name = "email">
+
+          </div>
+
+          <div id = "fieldTwo">
+
+          <h3>Phone:</h3>
+          <input type = "text" name = "phone">
+
+          </div>
+
+        </div>
+
+        <div id = "bottomForm">
+
+          <h3>Comments:</h3>
+          <p><textarea name = "comments" cols="50" rows="10"></textarea></p>
+          <input type="submit" name="submit">
+
+        </div>
+
+        <div id = "bottomFormMobile">
+          <h3>Comments:</h3>
+          <p><textarea id = "mobileComments" name = "comments" cols="25" rows="10"></textarea></p>
+          <input type="submit" name="submit">
+        </div>
+
+      </form>
+
+    </div>
+
+   </section>
+
+   <footer>
+
+    <p>Copyright Michael Perry 2019</p>
+
+   </footer>
+
+  </body>
+
+</div>
 </html>
